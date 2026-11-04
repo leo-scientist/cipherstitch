@@ -1,0 +1,170 @@
+/* CipherStitch — Qt stylesheet (PySide6), Nocturne tokens.
+   "@icons" is replaced with the absolute icons directory when the sheet is loaded.
+
+   Tokens
+   bg #161826   surface #232532   text #e9e9ed   accent #9184d9
+   divider #383946 (text 16% on bg)   muted #8a8b93 (text 55%)   label #aaaab1 (text 70%)
+   neutral-700 #595d6c  neutral-800 #3f424d  neutral-900 #292b31
+   accent-300 #d2cefd  accent-700 #5d5294  accent-900 #2b2741
+   radius 8px (controls), 14px (popovers), 6px (list rows)                      */
+
+* { font-family: "Inter"; font-size: 14px; color: #e9e9ed; }
+
+QMainWindow, QWidget#root { background: #161826; }
+QWidget#footer { background: #232532; }
+
+QLabel[role="rowLabel"] { color: #8a8b93; font-size: 13px; padding-top: 8px; }
+QLabel[role="muted"]    { color: #8a8b93; font-size: 12px; }
+QLabel[role="warning"]  { color: #d2cefd; font-size: 12px; }
+QLabel[role="status"]   { font-size: 12px; }
+QLabel[role="title"]    { font-size: 14px; font-weight: 500; }
+QLabel[role="body"]     { font-size: 12px; }
+QLabel[role="itemName"] { font-size: 13px; color: #e9e9ed; }
+QLabel[role="caption"]  { color: #8a8b93; font-size: 11px; }
+QLabel[role="dropTitle"] { font-size: 17px; font-weight: 500; }
+
+/* — inputs — */
+QLineEdit, QTextEdit, QPlainTextEdit, QComboBox, QAbstractSpinBox {
+  background: #232532; border: 1px solid #383946; border-radius: 8px;
+  padding: 6px 10px; min-height: 22px; selection-background-color: #423a6a;
+}
+QLineEdit:hover, QTextEdit:hover, QPlainTextEdit:hover, QComboBox:hover, QAbstractSpinBox:hover { border-color: #75798c; }
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus, QComboBox:focus, QAbstractSpinBox:focus { border-color: #9184d9; }
+QAbstractSpinBox::up-button, QAbstractSpinBox::down-button { width: 0; border: 0; }
+QLineEdit[error="true"] { border-color: #d2cefd; }
+QLineEdit:read-only { color: #b2b6ca; }
+
+/* A plain list under the field, not macOS's menu, which draws its own panel behind the list. */
+QComboBox { combobox-popup: 0; }
+QComboBox::drop-down { border: 0; width: 28px; }
+QComboBox::down-arrow { image: url(@icons/caret-up-down-muted.svg); width: 14px; height: 14px; }
+/* A disabled combo box holds the only choice: it reads as a fixed value, without the arrow. */
+QComboBox:disabled { color: #b2b6ca; border-color: #383946; }
+QComboBox::down-arrow:disabled { image: none; }
+QComboBox QAbstractItemView {
+  background: #232532; border: 1px solid #595d6c; border-radius: 8px; padding: 4px;
+  outline: 0; selection-background-color: #2b2741; selection-color: #e7e5fe;
+}
+
+/* — buttons — */
+QPushButton {
+  background: transparent; border: 1px solid #383946; border-radius: 8px;
+  padding: 6px 12px; font-weight: 500;
+}
+QPushButton:hover   { background: #252734; }
+QPushButton:pressed { background: #30323e; }
+QPushButton:disabled { color: #595d6c; border-color: #292b31; }
+
+QPushButton[variant="primary"] { color: #9184d9; border-color: #9184d9; padding: 7px 14px; }
+QPushButton[variant="primary"]:hover   { background: #25253c; }
+QPushButton[variant="primary"]:pressed { background: #31304d; }
+QPushButton[variant="primary"]:disabled { color: #423a6a; border-color: #423a6a; background: transparent; }
+
+QPushButton[variant="ghost"] { color: #9184d9; border-color: transparent; padding: 6px 4px; }
+QPushButton[variant="ghost"]:hover { background: #232338; }
+QPushButton[variant="ghost"]:disabled { color: #595d6c; }
+
+QPushButton[variant="icon"] { min-width: 34px; max-width: 34px; min-height: 34px; padding: 0; }
+
+/* Encryption and method fields: a QPushButton that opens the picker popover */
+QPushButton#pickerField {
+  background: #232532; border-color: #383946; text-align: left; padding: 6px 10px; font-weight: 400;
+}
+QPushButton#pickerField:hover { border-color: #75798c; }
+
+/* — segmented control: QButtonGroup(exclusive) of checkable QPushButtons in a QFrame#seg — */
+QFrame#seg { border: 1px solid #383946; border-radius: 8px; background: transparent; }
+QFrame#seg QPushButton {
+  border: 0; border-radius: 0; padding: 7px 12px; font-size: 13px; font-weight: 400;
+}
+QFrame#seg QPushButton[segPos="mid"], QFrame#seg QPushButton[segPos="last"] { border-left: 1px solid #383946; }
+QFrame#seg QPushButton[segPos="first"] { border-top-left-radius: 7px; border-bottom-left-radius: 7px; }
+QFrame#seg QPushButton[segPos="last"]  { border-top-right-radius: 7px; border-bottom-right-radius: 7px; }
+QFrame#seg QPushButton:checked { color: #9184d9; border: 1px solid #9184d9; }
+QFrame#seg QPushButton:!checked:hover { background: #252734; }
+QFrame#seg QPushButton:disabled { color: #595d6c; }
+
+/* — Research mode switch: a checkable QPushButton; ResearchSwitch paints the track and knob in
+   its right padding (gap 10 + track 32 + 8) — */
+QPushButton#researchSwitch {
+  background: transparent; border: 0; border-radius: 8px; padding: 6px 50px 6px 8px;
+  font-size: 13px; font-weight: 400;
+}
+QPushButton#researchSwitch:hover, QPushButton#researchSwitch:checked:hover { background: #292b31; }
+QPushButton#researchSwitch:pressed, QPushButton#researchSwitch:checked { background: transparent; }
+
+/* — file chip (carrier / payload rows) — */
+QFrame#fileChip { background: #232532; border: 1px solid #383946; border-radius: 8px; }
+QFrame#fileChip[clickable="true"]:hover { border-color: #75798c; }
+QFrame#fileChip[clickable="true"]:focus { border-color: #9184d9; }
+
+/* — tags — */
+QLabel[tag="recommended"]    { background: #423a6a; color: #f5f4ff; border-radius: 6px; padding: 2px 9px; font-size: 11px; }
+QLabel[tag="acceptable"]     { background: #3f424d; color: #f3f5fe; border-radius: 6px; padding: 2px 9px; font-size: 11px; }
+QLabel[tag="notRecommended"] { border: 1px solid #9184d9; color: #9184d9; border-radius: 6px; padding: 1px 8px; font-size: 11px; }
+QLabel[tag="experimental"]   { border: 1px solid #9184d9; color: #9184d9; border-radius: 6px; padding: 1px 8px; font-size: 11px; }
+
+/* — capacity / progress — */
+QProgressBar { background: #3f424d; border: 0; border-radius: 2px; max-height: 4px; min-height: 4px; text-align: center; color: transparent; }
+QProgressBar::chunk { background: #9184d9; border-radius: 2px; }
+QProgressBar[over="true"]::chunk, QProgressBar[conspicuous="true"]::chunk { background: #d2cefd; }
+
+/* — password strength meter — */
+QFrame[role="strengthSegment"] { background: #3f424d; border-radius: 1px; min-height: 3px; max-height: 3px; }
+QFrame[role="strengthSegment"][filled="true"] { background: #9184d9; }
+
+/* — picker popover (QFrame, Qt.Popup) — */
+QFrame#pickerPopover { background: #232532; border: 1px solid #595d6c; border-radius: 14px; }
+QListWidget#pickerList { background: transparent; border: 0; outline: 0; }
+QListWidget#pickerList::item { border-radius: 6px; padding: 6px 8px; }
+QListWidget#pickerList::item:hover    { background: #292b31; }
+QListWidget#pickerList::item:disabled { background: transparent; }
+QListWidget#pickerList::item:selected { background: #2b2741; color: #e9e9ed; }
+QFrame#pickerDetail { background: #161826; border-radius: 8px; }
+
+/* — result card — */
+QFrame#resultCard { background: #2b2741; border: 1px solid #5d5294; border-radius: 8px; }
+QFrame#resultCard QLabel[role="muted"] { color: #d2cefd; }
+
+/* — drop overlay — */
+QWidget#dropOverlay { background: rgba(22, 24, 38, 230); }
+QFrame#dropZone { border: 2px dashed #595d6c; border-radius: 14px; background: transparent; }
+QFrame#dropZone[active="true"] { border-color: #9184d9; background: #2b2741; }
+
+/* — Research parameters sheet: header on bg, groups on surface, the group's rows on bg — */
+QFrame#parameterSheet { background: #161826; }
+QLabel[role="sheetTitle"] { font-size: 15px; font-weight: 500; }
+QLabel[role="code"] { font-family: "Menlo", "Consolas", monospace; font-size: 11px; color: #b2b6ca; }
+QWidget#sheetBody, QWidget#groupPanel { background: #232532; }
+QFrame#groupDetail { background: #161826; border-top-left-radius: 14px; }
+QListWidget#groupList { background: transparent; border: 0; outline: 0; }
+QListWidget#groupList::item { border-radius: 6px; }
+QListWidget#groupList::item:hover { background: #3f424d; }
+QListWidget#groupList::item:selected { background: #2b2741; }
+QScrollArea#parameterRows, QScrollArea#parameterRows > QWidget > QWidget { background: transparent; border: 0; }
+/* The pages' form scrolls on a short screen; the window's background shows through. */
+QScrollArea#pageScroll, QScrollArea#pageScroll > QWidget > QWidget { background: transparent; border: 0; }
+QFrame#changedDot { background: #9184d9; border-radius: 3px; }
+QPushButton#resetButton { border: 0; padding: 0; }
+/* ToggleSwitch paints its track in the left padding (track 32 + gap 10) */
+QPushButton#toggleSwitch {
+  background: transparent; border: 0; padding: 0 0 0 42px; min-height: 36px;
+  text-align: left; font-size: 13px; font-weight: 400;
+}
+QPushButton#toggleSwitch:hover, QPushButton#toggleSwitch:pressed, QPushButton#toggleSwitch:checked { background: transparent; }
+
+/* — keyboard focus on buttons: the inputs' focus colour on the border, no dotted frame. A button
+   without a border, or with that border already (the primary one), shows its hover look or the
+   colour in its text. After the buttons' own rules: an id outranks a pseudo-class. — */
+QPushButton:focus { outline: none; border-color: #9184d9; }
+QPushButton#pickerField:focus { border-color: #9184d9; }
+QPushButton[variant="primary"]:focus { background: #25253c; }
+QFrame#seg QPushButton:focus { background: #252734; }
+QPushButton#researchSwitch:focus { background: #292b31; }
+QPushButton#resetButton:focus { background: #252734; }
+QPushButton#toggleSwitch:focus { color: #9184d9; }
+
+QToolTip { background: #232532; color: #e9e9ed; border: 1px solid #595d6c; border-radius: 6px; padding: 6px 8px; }
+QScrollBar:vertical { background: transparent; width: 8px; }
+QScrollBar::handle:vertical { background: #3f424d; border-radius: 4px; min-height: 24px; }
+QScrollBar::add-line, QScrollBar::sub-line { height: 0; }

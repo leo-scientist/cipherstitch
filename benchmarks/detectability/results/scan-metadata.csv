@@ -1,0 +1,11 @@
+condition,tag,files,of
+lsb-f05,(none),0,500
+lsb-f50,(none),0,500
+openstego-f05,(none),0,500
+openstego-f20,(none),0,500
+dct-q75-f05,(none),0,491
+dct-q75-f50,(none),0,500
+steghide-f05,(none),0,494
+steghide-f20,(none),0,500
+psi-f05,(none),0,498
+psi-f50,(none),0,500

@@ -1,0 +1,39 @@
+condition,kind,group,fill,test_pairs,pe_mean,pe_std,auc_mean,auc_std
+lsb-f01,lsb,CipherStitch image LSB,1,1500,0.4838,0.0032,0.5234,0.0023
+lsb-f05,lsb,CipherStitch image LSB,5,1500,0.4058,0.0039,0.6407,0.0025
+lsb-f10,lsb,CipherStitch image LSB,10,1500,0.3136,0.0053,0.7662,0.0039
+lsb-f20,lsb,CipherStitch image LSB,20,1500,0.2136,0.0060,0.8758,0.0054
+lsb-f50,lsb,CipherStitch image LSB,50,1500,0.0975,0.0044,0.9710,0.0024
+openstego-f05,lsb,OpenStego RandomLSB,5,1500,0.2734,0.0056,0.8116,0.0045
+openstego-f20,lsb,OpenStego RandomLSB,20,1500,0.1345,0.0042,0.9464,0.0031
+lsbr-f05,lsb,LSB replacement (simulated),5,1500,0.2734,0.0049,0.8143,0.0054
+lsbr-f20,lsb,LSB replacement (simulated),20,1500,0.1334,0.0032,0.9471,0.0026
+lsbm-f05,lsb,LSB matching (simulated),5,1500,0.2721,0.0057,0.8160,0.0041
+lsbm-f20,lsb,LSB matching (simulated),20,1500,0.1353,0.0043,0.9453,0.0030
+lsbmh-f05,lsb,"LSB matching, Hamming efficiency (simulated)",5,1500,0.3910,0.0034,0.6630,0.0022
+lsbmh-f20,lsb,"LSB matching, Hamming efficiency (simulated)",20,1500,0.2136,0.0063,0.8760,0.0038
+hill-f05,lsb,HILL (simulated),5,1500,0.4739,0.0042,0.5369,0.0040
+hill-f20,lsb,HILL (simulated),20,1500,0.3695,0.0047,0.6866,0.0033
+dct-q75-f01,jpeg,CipherStitch DCT on a JPEG (QF 75),1,648,0.4856,0.0050,0.5219,0.0021
+dct-q75-f05,jpeg,CipherStitch DCT on a JPEG (QF 75),5,1458,0.3906,0.0068,0.6573,0.0057
+dct-q75-f10,jpeg,CipherStitch DCT on a JPEG (QF 75),10,1492,0.2929,0.0102,0.7865,0.0103
+dct-q75-f20,jpeg,CipherStitch DCT on a JPEG (QF 75),20,1497,0.1456,0.0083,0.9370,0.0056
+dct-q75-f50,jpeg,CipherStitch DCT on a JPEG (QF 75),50,1498,0.0230,0.0042,0.9977,0.0007
+steghide-f05,jpeg,steghide,5,1459,0.1091,0.0036,0.9576,0.0019
+steghide-f20,jpeg,steghide,20,1497,0.0086,0.0020,0.9995,0.0002
+nsf5-f05,jpeg,nsF5 (simulated),5,1458,0.4333,0.0062,0.5883,0.0069
+nsf5-f20,jpeg,nsF5 (simulated),20,1497,0.1789,0.0050,0.9029,0.0038
+nsf5-bpnzac020,jpeg,nsF5 at 0.2 bpnzAC (simulated),,1500,0.1197,0.0066,0.9515,0.0035
+psi-f01,jpeg,CipherStitch DCT from a TIFF precover (P-SI),1,1006,0.4892,0.0037,0.5161,0.0022
+psi-f05,jpeg,CipherStitch DCT from a TIFF precover (P-SI),5,1488,0.4251,0.0071,0.6041,0.0115
+psi-f10,jpeg,CipherStitch DCT from a TIFF precover (P-SI),10,1497,0.3385,0.0128,0.7183,0.0163
+psi-f20,jpeg,CipherStitch DCT from a TIFF precover (P-SI),20,1499,0.1682,0.0125,0.9083,0.0093
+psi-f50,jpeg,CipherStitch DCT from a TIFF precover (P-SI),50,1500,0.0102,0.0015,0.9986,0.0007
+pnosi-f01,jpeg,"CipherStitch DCT on P-0, no side information",1,1006,0.4939,0.0060,0.5103,0.0036
+pnosi-f05,jpeg,"CipherStitch DCT on P-0, no side information",5,1488,0.4418,0.0051,0.5825,0.0036
+pnosi-f10,jpeg,"CipherStitch DCT on P-0, no side information",10,1497,0.3636,0.0062,0.6878,0.0084
+pnosi-f20,jpeg,"CipherStitch DCT on P-0, no side information",20,1499,0.1852,0.0097,0.8910,0.0080
+pnosi-f50,jpeg,"CipherStitch DCT on P-0, no side information",50,1500,0.0072,0.0014,0.9992,0.0004
+jnosi-f05,jpeg,CipherStitch DCT on Pillow's JPEG (J-noSI),5,1491,0.4404,0.0056,0.5849,0.0052
+jnosi-f20,jpeg,CipherStitch DCT on Pillow's JPEG (J-noSI),20,1500,0.1757,0.0091,0.9004,0.0101
+p0,jpeg,E-C: CipherStitch's compressor against Pillow's,,1500,0.2248,0.0151,0.8610,0.0148

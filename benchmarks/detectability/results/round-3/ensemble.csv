@@ -1,0 +1,17 @@
+condition,kind,group,fill,rate,test_pairs,pe_mean,pe_std,auc_mean,auc_std
+lsb3-f05,lsb,"CipherStitch image LSB, round 3",5,,1500,0.4754,0.0038,0.5364,0.0025
+lsb3-f20,lsb,"CipherStitch image LSB, round 3",20,,1500,0.3684,0.0054,0.6902,0.0041
+lsb3-r25,lsb,"CipherStitch image LSB at a root rate, round 3",,25,1500,0.4851,0.0017,0.5195,0.0021
+lsb3-r40,lsb,"CipherStitch image LSB at a root rate, round 3",,40,1500,0.4756,0.0043,0.5360,0.0033
+lsb3-r60,lsb,"CipherStitch image LSB at a root rate, round 3",,60,1500,0.4643,0.0045,0.5542,0.0052
+lsb3-r90,lsb,"CipherStitch image LSB at a root rate, round 3",,90,1500,0.4380,0.0059,0.5922,0.0062
+dct3-q75-f05,jpeg,"CipherStitch DCT on a JPEG (QF 75), round 3",5,,1456,0.4625,0.0037,0.5524,0.0027
+dct3-q75-f20,jpeg,"CipherStitch DCT on a JPEG (QF 75), round 3",20,,1497,0.3891,0.0061,0.6527,0.0055
+dct3-q75-r10,jpeg,"CipherStitch DCT (QF 75) at a root rate, round 3",,10,1498,0.4632,0.0040,0.5524,0.0044
+dct3-q75-r18,jpeg,"CipherStitch DCT (QF 75) at a root rate, round 3",,18,1498,0.4370,0.0053,0.5852,0.0047
+dct3-q75-r30,jpeg,"CipherStitch DCT (QF 75) at a root rate, round 3",,30,1499,0.4030,0.0054,0.6383,0.0054
+psi3-f05,jpeg,"CipherStitch DCT from a TIFF precover (P-SI), round 3",5,,1488,0.4933,0.0042,0.5095,0.0030
+psi3-f20,jpeg,"CipherStitch DCT from a TIFF precover (P-SI), round 3",20,,1499,0.4518,0.0043,0.5677,0.0040
+psi3-r45,jpeg,"CipherStitch DCT from a TIFF precover at a root rate, round 3",,45,1500,0.4425,0.0059,0.5815,0.0049
+psi3-r65,jpeg,"CipherStitch DCT from a TIFF precover at a root rate, round 3",,65,1500,0.4139,0.0098,0.6271,0.0085
+psi3-r90,jpeg,"CipherStitch DCT from a TIFF precover at a root rate, round 3",,90,1500,0.3596,0.0062,0.7013,0.0081

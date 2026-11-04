@@ -1,0 +1,39 @@
+name: CodeQL
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "20 6 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: codeql-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - uses: github/codeql-action/init@v4
+        with:
+          languages: python
+          build-mode: none
+        env:
+          # The project is Python 3.12 or later: without this the extractor may pick an
+          # older grammar and report syntax errors in valid files.
+          CODEQL_EXTRACTOR_PYTHON_ANALYSIS_VERSION: "3.12"
+      - uses: github/codeql-action/analyze@v4
+        with:
+          category: "/language:python"

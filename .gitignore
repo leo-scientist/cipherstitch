@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# Tool caches and reports
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# IDEs and OS files
+.idea/
+.vscode/
+.DS_Store
+
+# Detectability study data (images, features, scores)
+benchmarks/detectability/work/
+benchmarks/detectability/results/scores.csv.gz
+
+# Extensions: the folder ships with its contract only, so a local one is never committed
+src/cipherstitch/extensions/*
+!src/cipherstitch/extensions/__init__.py
+
+# Local agent notes
+ai_agents/
+CLAUDE.md

@@ -1,0 +1,25 @@
+condition,kind,group,fill,rate,test_pairs,pe_mean,pe_std,auc_mean,auc_std
+lsb2-f05,lsb,"CipherStitch image LSB, round 2",5,,1500,0.4667,0.0041,0.5503,0.0042
+lsb2-f20,lsb,"CipherStitch image LSB, round 2",20,,1500,0.3267,0.0080,0.7421,0.0045
+lsb2-r140,lsb,CipherStitch image LSB at a root rate,,140,1500,0.3613,0.0051,0.6976,0.0034
+lsb2-r210,lsb,CipherStitch image LSB at a root rate,,210,1500,0.2970,0.0055,0.7789,0.0044
+lsb2-r300,lsb,CipherStitch image LSB at a root rate,,300,1500,0.2379,0.0042,0.8484,0.0042
+dct2-q75-f05,jpeg,"CipherStitch DCT on a JPEG (QF 75), round 2",5,,1456,0.4416,0.0034,0.5821,0.0038
+dct2-q75-f20,jpeg,"CipherStitch DCT on a JPEG (QF 75), round 2",20,,1497,0.2421,0.0073,0.8430,0.0075
+dct2-q75-r12,jpeg,CipherStitch DCT (QF 75) at a root rate,,12,1498,0.4188,0.0046,0.6196,0.0057
+dct2-q75-r19,jpeg,CipherStitch DCT (QF 75) at a root rate,,19,1498,0.3659,0.0082,0.6932,0.0070
+dct2-q75-r28,jpeg,CipherStitch DCT (QF 75) at a root rate,,28,1499,0.3028,0.0052,0.7756,0.0065
+psi2-f05,jpeg,"CipherStitch DCT from a TIFF precover (P-SI), round 2",5,,1488,0.4936,0.0038,0.5100,0.0028
+psi2-f20,jpeg,"CipherStitch DCT from a TIFF precover (P-SI), round 2",20,,1499,0.4557,0.0053,0.5657,0.0030
+jnosi2-f05,jpeg,"CipherStitch DCT on Pillow's JPEG (J-noSI), round 2",5,,1488,0.4851,0.0035,0.5230,0.0019
+jnosi2-f20,jpeg,"CipherStitch DCT on Pillow's JPEG (J-noSI), round 2",20,,1499,0.3734,0.0048,0.6786,0.0058
+hstego-png-f05,lsb,HStego S-UNIWARD,5,,1499,0.4649,0.0034,0.5534,0.0046
+hstego-png-f20,lsb,HStego S-UNIWARD,20,,1499,0.3376,0.0054,0.7312,0.0029
+hstego-q75-f05,jpeg,HStego J-UNIWARD,5,,1451,0.3671,0.0051,0.6856,0.0050
+hstego-q75-f20,jpeg,HStego J-UNIWARD,20,,1454,0.3405,0.0086,0.7208,0.0088
+lsb2-crop-r140,lsb,"CipherStitch image LSB at a root rate, 256 × 256",,140,1500,0.2754,0.0087,0.7995,0.0093
+lsb2-crop-r210,lsb,"CipherStitch image LSB at a root rate, 256 × 256",,210,1500,0.1929,0.0076,0.8873,0.0073
+lsb2-crop-r300,lsb,"CipherStitch image LSB at a root rate, 256 × 256",,300,1500,0.1067,0.0077,0.9606,0.0042
+dct2-q75-crop-r12,jpeg,"CipherStitch DCT (QF 75) at a root rate, 256 × 256",,12,1469,0.3867,0.0058,0.6713,0.0071
+dct2-q75-crop-r19,jpeg,"CipherStitch DCT (QF 75) at a root rate, 256 × 256",,19,1491,0.3151,0.0055,0.7640,0.0093
+dct2-q75-crop-r28,jpeg,"CipherStitch DCT (QF 75) at a root rate, 256 × 256",,28,1495,0.2344,0.0054,0.8590,0.0062

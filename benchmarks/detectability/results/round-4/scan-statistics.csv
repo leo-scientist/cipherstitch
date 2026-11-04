@@ -1,0 +1,7 @@
+condition,statistic,n,pe_mean,pe_std,auc_mean
+lsb4-f05,binwalk entropy,500,0.4974,0.0114,0.4970
+lsb4-f05,StegExpose fusion,500,0.5008,0.0030,0.5002
+lsb4-f20,binwalk entropy,500,0.5060,0.0101,0.4935
+lsb4-f20,StegExpose fusion,500,0.4940,0.0055,0.5036
+dct4-q75-f05,binwalk entropy,491,0.5002,0.0059,0.4980
+dct4-q75-f20,binwalk entropy,500,0.5010,0.0067,0.4994

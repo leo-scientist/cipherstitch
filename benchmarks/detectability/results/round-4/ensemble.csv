@@ -1,0 +1,7 @@
+condition,kind,group,fill,rate,test_pairs,pe_mean,pe_std,auc_mean,auc_std
+lsb4-f05,lsb,"CipherStitch image LSB, round 4",5,,1500,0.4743,0.0039,0.5379,0.0038
+lsb4-f20,lsb,"CipherStitch image LSB, round 4",20,,1500,0.3691,0.0029,0.6886,0.0043
+dct4-q75-f05,jpeg,"CipherStitch DCT on a JPEG (QF 75), round 4",5,,1456,0.4618,0.0062,0.5522,0.0026
+dct4-q75-f20,jpeg,"CipherStitch DCT on a JPEG (QF 75), round 4",20,,1497,0.3940,0.0057,0.6478,0.0041
+psi4-f05,jpeg,"CipherStitch DCT from a TIFF precover (P-SI), round 4",5,,1488,0.4931,0.0037,0.5099,0.0028
+psi4-f20,jpeg,"CipherStitch DCT from a TIFF precover (P-SI), round 4",20,,1499,0.4588,0.0043,0.5611,0.0044

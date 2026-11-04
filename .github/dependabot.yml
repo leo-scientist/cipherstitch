@@ -1,0 +1,7 @@
+# The Python pins are updated by hand (see CONTRIBUTING.md, Dependencies).
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"

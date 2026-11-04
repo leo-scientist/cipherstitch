@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="482" viewBox="0 0 720 482" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif">
+  <title>How often a trained detector is wrong</title>
+  <desc>Image LSB on a PNG, against OpenStego and HStego: CipherStitch 0.474 and 0.369, HStego 0.465 and 0.338, the popular tool 0.273 and 0.135, at 5% and 20% of the capacity. DCT on a JPEG at quality 75, against steghide and HStego: CipherStitch 0.462 and 0.394, HStego 0.367 and 0.341, the popular tool 0.109 and 0.009, at 5% and 20% of the capacity.</desc>
+  <text x="0.0" y="20.0" font-size="16" font-weight="600" fill="#e9e9ed" text-anchor="start">How often a trained detector is wrong</text>
+  <text x="0.0" y="42.0" font-size="13" font-weight="400" fill="#aaaab1" text-anchor="start">Higher is harder to detect, and 0.5 is a coin toss. Each tool carries the same payload.</text>
+  <rect x="0" y="62" width="10" height="10" rx="2" fill="#9184d9"/>
+  <text x="16.0" y="71.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="start">CipherStitch</text>
+  <rect x="100" y="62" width="10" height="10" rx="2" fill="#d9693a"/>
+  <text x="116.0" y="71.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="start">HStego</text>
+  <rect x="176" y="62" width="10" height="10" rx="2" fill="#4b4f5d"/>
+  <text x="192.0" y="71.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="start">OpenStego or steghide</text>
+  <text x="0.0" y="110.0" font-size="13" font-weight="600" fill="#e9e9ed" text-anchor="start">Image LSB on a PNG, against OpenStego and HStego</text>
+  <line x1="268.8" y1="116.0" x2="268.8" y2="258.0" stroke="#262833"/>
+  <line x1="369.6" y1="116.0" x2="369.6" y2="258.0" stroke="#262833"/>
+  <line x1="470.4" y1="116.0" x2="470.4" y2="258.0" stroke="#262833"/>
+  <line x1="571.2" y1="116.0" x2="571.2" y2="258.0" stroke="#262833"/>
+  <line x1="672.0" y1="116.0" x2="672.0" y2="258.0" stroke="#3f424d"/>
+  <line x1="168.0" y1="116.0" x2="168.0" y2="258.0" stroke="#3f424d"/>
+  <text x="156.0" y="155.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="end">5% of the capacity</text>
+  <path d="M168,122.0 h473.8 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-473.8 z" fill="#9184d9"/>
+  <text x="637.8" y="135.0" font-size="12" font-weight="600" fill="#0d1117" text-anchor="end">0.474</text>
+  <path d="M168,142.0 h464.7 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-464.7 z" fill="#d9693a"/>
+  <text stroke="#0d1117" stroke-width="4" paint-order="stroke" x="642.7" y="155.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="start">0.465</text>
+  <path d="M168,162.0 h271.2 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-271.2 z" fill="#4b4f5d"/>
+  <text stroke="#0d1117" stroke-width="4" paint-order="stroke" x="449.2" y="175.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="start">0.273</text>
+  <text x="156.0" y="227.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="end">20% of the capacity</text>
+  <path d="M168,194.0 h368.0 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-368.0 z" fill="#9184d9"/>
+  <text x="532.0" y="207.0" font-size="12" font-weight="600" fill="#0d1117" text-anchor="end">0.369</text>
+  <path d="M168,214.0 h336.7 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-336.7 z" fill="#d9693a"/>
+  <text stroke="#0d1117" stroke-width="4" paint-order="stroke" x="514.7" y="227.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="start">0.338</text>
+  <path d="M168,234.0 h132.1 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-132.1 z" fill="#4b4f5d"/>
+  <text stroke="#0d1117" stroke-width="4" paint-order="stroke" x="310.1" y="247.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="start">0.135</text>
+  <text x="0.0" y="292.0" font-size="13" font-weight="600" fill="#e9e9ed" text-anchor="start">DCT on a JPEG at quality 75, against steghide and HStego</text>
+  <line x1="268.8" y1="298.0" x2="268.8" y2="440.0" stroke="#262833"/>
+  <line x1="369.6" y1="298.0" x2="369.6" y2="440.0" stroke="#262833"/>
+  <line x1="470.4" y1="298.0" x2="470.4" y2="440.0" stroke="#262833"/>
+  <line x1="571.2" y1="298.0" x2="571.2" y2="440.0" stroke="#262833"/>
+  <line x1="672.0" y1="298.0" x2="672.0" y2="440.0" stroke="#3f424d"/>
+  <line x1="168.0" y1="298.0" x2="168.0" y2="440.0" stroke="#3f424d"/>
+  <text x="156.0" y="337.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="end">5% of the capacity</text>
+  <path d="M168,304.0 h461.7 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-461.7 z" fill="#9184d9"/>
+  <text x="625.7" y="317.0" font-size="12" font-weight="600" fill="#0d1117" text-anchor="end">0.462</text>
+  <path d="M168,324.0 h365.9 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-365.9 z" fill="#d9693a"/>
+  <text stroke="#0d1117" stroke-width="4" paint-order="stroke" x="543.9" y="337.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="start">0.367</text>
+  <path d="M168,344.0 h105.9 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-105.9 z" fill="#4b4f5d"/>
+  <text stroke="#0d1117" stroke-width="4" paint-order="stroke" x="283.9" y="357.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="start">0.109</text>
+  <text x="156.0" y="409.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="end">20% of the capacity</text>
+  <path d="M168,376.0 h393.2 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-393.2 z" fill="#9184d9"/>
+  <text x="557.2" y="389.0" font-size="12" font-weight="600" fill="#0d1117" text-anchor="end">0.394</text>
+  <path d="M168,396.0 h339.7 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-339.7 z" fill="#d9693a"/>
+  <text stroke="#0d1117" stroke-width="4" paint-order="stroke" x="517.7" y="409.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="start">0.341</text>
+  <path d="M168,416.0 h5.1 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-5.1 z" fill="#4b4f5d"/>
+  <text stroke="#0d1117" stroke-width="4" paint-order="stroke" x="183.1" y="429.0" font-size="12" font-weight="400" fill="#aaaab1" text-anchor="start">0.009</text>
+  <text x="168.0" y="458.0" font-size="12" font-weight="400" fill="#8a8b93" text-anchor="middle">0</text>
+  <text x="268.8" y="458.0" font-size="12" font-weight="400" fill="#8a8b93" text-anchor="middle">0.1</text>
+  <text x="369.6" y="458.0" font-size="12" font-weight="400" fill="#8a8b93" text-anchor="middle">0.2</text>
+  <text x="470.4" y="458.0" font-size="12" font-weight="400" fill="#8a8b93" text-anchor="middle">0.3</text>
+  <text x="571.2" y="458.0" font-size="12" font-weight="400" fill="#8a8b93" text-anchor="middle">0.4</text>
+  <text x="672.0" y="458.0" font-size="12" font-weight="400" fill="#8a8b93" text-anchor="middle">0.5</text>
+  <text x="672.0" y="474.0" font-size="12" font-weight="400" fill="#8a8b93" text-anchor="middle">coin toss</text>
+</svg>
